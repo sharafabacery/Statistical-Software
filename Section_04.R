@@ -24,7 +24,7 @@ txtdata=read.table('test.txt', header = TRUE)
 # (3)
 coldata=data.frame(Weight=txtdata["Weight"],Gender=txtdata["Gender"])
 
-# note: I dont know what values of test.txt for that I create new file with Human.body dataframe
+# note: I dont know what values of test.csv for that I create new file with Human.body dataframe
 write.csv(Human.body,"test.csv",row.names=FALSE)
 
 # (4)
