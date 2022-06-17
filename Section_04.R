@@ -15,6 +15,7 @@ Human.body.copy[7,3]="Female"
 # (e)
 Human.body.copy["age"]=30:36
 
+# note: I dont know what values of test.txt for that I create new file with Human.body dataframe
 write.table(Human.body,"test.txt",sep="\t",row.names=FALSE)
 
 # (2)
@@ -23,6 +24,7 @@ txtdata=read.table('test.txt', header = TRUE)
 # (3)
 coldata=data.frame(Weight=txtdata["Weight"],Gender=txtdata["Gender"])
 
+# note: I dont know what values of test.txt for that I create new file with Human.body dataframe
 write.csv(Human.body,"test.csv",row.names=FALSE)
 
 # (4)
