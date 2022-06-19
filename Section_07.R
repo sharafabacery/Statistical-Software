@@ -1,3 +1,4 @@
+# note : if there is anthor solution better than that please drop it
 # (1) The following data are the oxygen uptakes (milliliters) during incubation of a 
 # random sample of 15 suspensions.
 # 14.0, 14.1, 14.5, 13.2, 11.2, 14.0, 14.1, 12.2, 11.1, 13.7, 13.2, 16.0, 12.8, 14.4, 12.9
