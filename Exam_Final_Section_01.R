@@ -26,15 +26,16 @@ t.test(x,y,var.equal=TRUE,alternative="less",conf.level=.99)
 # (a) Calculate the standard deviation of the speed recording distances less than 35
 cars.copy <- data.frame(cars)
 dist=cars.copy["dist"]
-distances <- c()
+speed=cars.copy["speed"]
+speeds <- c()
 for (i in 1:nrow(dist)) {
    if(dist[i,]<35){
-        distances<-c(distances,dist[i,])
+        speeds<-c(speeds,speed[i,])
    }
 }
-distancessd=sd(distances)
-distancessd
-# 9.396943
+speedsd=sd(speeds)
+speedsd
+# 3.84458
 
 # (b) Construct a histogram for cars with speed less than or equal to 19
 speed=cars.copy["speed"]
