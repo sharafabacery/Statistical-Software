@@ -128,6 +128,7 @@ sample(1:200,250,replace=TRUE)
 # 110  23  80 106  53  93 188  79 137 115  54 106 133 151 168  70
 
 # (3):
+#    (a):
 # H(o)(mean of number of heartbeats before experiment == mean of number of heartbeats after experiment)
 # H(a)(mean of number of heartbeats before experiment < mean of number of heartbeats after experiment)
 x=c(70,84,85,110,105,100,110,67,79)
@@ -143,6 +144,10 @@ t.test(x,y,paired=TRUE,conf.level=.98,alternative="less")
 # mean of the differences 
 #                    -10 
 # (p-value<0.02) then reject H(o)
+
+#    (b):
+boxplot(x,y)
+# In boxPlot there is no outlier.
 
 # (4):
 myFun<-function(n){
