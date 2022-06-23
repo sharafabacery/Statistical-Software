@@ -77,16 +77,17 @@ intersect(1:10,5:14)
 
 # (4)
 # compute A^3
-A<-matrix(c(1,1,3,5,2,6,-2,-1,-3),3,3);
+A<-matrix(c(1,1,3,5,2,6,-2,-1,-3),3,3,byrow=T);
 B<-A%*%A%*%A
 #  0    0    0
 #  0    0    0
 #  0    0    0
 # get sum second and third and make third column this sum
 A[,3]=A[,2]+A[,3]
-#  1    5    3
-#  1    2    1
-#  3    6    3
+#  1    1    4
+#  5    2    8
+# -2   -1   -4
+
 
 # (5) calculate transpose(B)*B
 B<-matrix(rep(c(10,-10,10),15),15,3,byrow=T);
@@ -103,3 +104,6 @@ tmpFn<-function(x,n) {
     }
     return (sum);
 }
+# tmpFn<-function(x,n) {
+#    return (1+sum((x^(1:n))/(1:n)));
+#}

@@ -14,21 +14,19 @@ tmpFn<-function() {
     }
     return (sum);
 }
+# alterative solution :
+# tmpFn<-function() {
+#    return (sum((2^(1:25))/(1:25)))
+# }
 tmpFn()
 # 2807607
 
 # (c)
 tmpFn1<-function() {
-    sum<-1;
-    j=3;
-    for (i in 2:38) {
-        sum=sum+(i/j);
-        j=j+1;
-    }
-    return (sum);
+    return (1+sum(seq(2,38,2)/seq(3,39,2)));
 }
 tmpFn1()
-# 35.24646
+# 18.52033
 
 # (2) use function paste to create the following chracter of vector 30:
 
