@@ -104,6 +104,7 @@ tmpFn<-function(x,n) {
     }
     return (sum);
 }
+# alterative solution :
 # tmpFn<-function(x,n) {
 #    return (1+sum((x^(1:n))/(1:n)));
 #}
