@@ -55,6 +55,7 @@ t.test(x,mu=12.5,conf.level = 0.90, alternative = "less")
 # let H(o)(null)(mean 1(mean of weekly loss before new program) == mean 2(mean of weekly loss after new program)) and H(a)(alternative)(mean 1 != mean 2)
 x<-c(45, 73, 46, 124, 33, 57, 83, 34, 17)
 y<-c(44 ,65 ,44 ,119 ,35 ,56 ,80 ,31 ,11)
+t.test(x,y,paired =TRUE,alternative='g')
 t.test(x,y,paired =TRUE)
 #        Paired t-test
 # data:  x and y
