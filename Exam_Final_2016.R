@@ -22,14 +22,6 @@ quantile(Orange.Copy$age, probs = c(.44,.7))
 # 990.4 1231.0 
 
 # (d):
-meanage=mean(Orange.Copy$age)
-#  922.1429
-
-# (e):
-iqr=IQR(Orange.Copy$circumference)
-#  96
-
-# (f):
 age=Orange.Copy$age
 Tree=Orange.Copy$Tree
 ageToTest=c()
@@ -38,7 +30,16 @@ for(i in 1:length(Tree)){
         ageToTest=c(ageToTest,age[i])
     }
 }
-test=ks.test(ageToTest,"exp")
+meanage=mean(ageToTest)
+#  922.1429
+
+# (e):
+iqr=IQR(Orange.Copy$circumference)
+#  96
+
+# (f):
+age=Orange.Copy$age
+ks.test(age,"exp")
 #        One-sample Kolmogorov-Smirnov test
 # data:  ageToTest
 # D = Inf, p-value < 2.2e-16
