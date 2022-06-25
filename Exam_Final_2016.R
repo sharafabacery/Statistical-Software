@@ -13,8 +13,8 @@ for(i in 1:length(circumference)){
         ageToGetMean=c(ageToGetMean,age[i])
     }
 }
-meanage=mean(ageToGetMean)
-# 1477
+meanage=var(ageToGetMean)
+# 14700
 
 # (c):
 quantile(Orange.Copy$age, probs = c(.44,.7))
