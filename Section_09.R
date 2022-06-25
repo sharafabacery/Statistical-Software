@@ -11,8 +11,9 @@ x=c(42 ,37,46 ,30 ,50 ,43,43,46,46,49)
 y=c(173,149,185,123,201,174,175,188,186,198)
 line=lm(y~x)
 # (a) Calculate the least squares estimates of the coefficients of the regression line. 
-least_squares_estimates=sum(resid(line)*resid(line))
-#  15.71033
+# (Intercept)            x  
+#      4.413        3.953  
+
 
 # (b) Find the regression equation describing the linear relationship between the two variables.
 line=lm(y~x)
